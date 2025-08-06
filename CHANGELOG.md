@@ -1,38 +1,9 @@
-# Changelog
+## 0.2.0 (2025-08-06)
 
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+### Features
 
-## [Unreleased]
+* add Swift linting and formatting infrastructure ([bf6ae92](https://github.com/brunogama/SwiftMessageBus/commit/bf6ae92a2e2134499e22e5981892b72259611c1c))
+* **core:** implement core message protocols ([1d7fd5c](https://github.com/brunogama/SwiftMessageBus/commit/1d7fd5c90f50c41e41480c17ed639fa6d6751ddd))
+* initialize Swift Message Bus package structure ([c40730f](https://github.com/brunogama/SwiftMessageBus/commit/c40730fda79ddf98d1f76b2ffe61633354e16b03))
 
-### ✨ Features
-- Initialize Swift Message Bus package structure with multi-platform support
-- Configure Swift 5.9+ package with iOS 16+, macOS 13+, watchOS 9+, tvOS 16+ support
-- Add core dependencies (swift-syntax, swift-collections, swift-benchmark)
-- Set up comprehensive target structure (library, macros, client, tests, benchmarks)
-
-### 📚 Documentation
-- Add comprehensive README with project overview and usage examples
-- Create CONTRIBUTING guide with conventional commits guidelines
-- Add MIT license for open source distribution
-
-### 🎡 CI/CD
-- Add GitHub Actions workflow for automated changelog generation
-- Add GitHub Actions workflow for release automation
-- Add PR title validation for conventional commits compliance
-
-### 🔧 Chores
-- Configure .gitignore for Swift/Xcode development
-- Set up git commit message template
-- Add version tracking with package.json
-- Configure commitlint for commit message validation
-
-## [0.1.0] - 2025-08-06
-
-### ✨ Features
-- Initial package creation
-
-[Unreleased]: https://github.com/yourusername/SwiftMessageBus/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/yourusername/SwiftMessageBus/releases/tag/v0.1.0
