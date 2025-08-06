@@ -77,7 +77,9 @@ Full documentation and examples coming soon.
 
 ## Contributing
 
-Contributions are welcome! Please read our contributing guidelines before submitting PRs.
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting PRs.
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/) specification for commit messages to enable automated changelog generation.
 
 ## License
 

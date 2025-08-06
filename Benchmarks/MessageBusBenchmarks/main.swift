@@ -11,5 +11,8 @@ let benchmarks = BenchmarkSuite(name: "SwiftMessageBus") { suite in
     }
 }
 
-// Entry point - uncomment to run benchmarks
+// Main entry point for running benchmarks
+// To run: swift run -c release MessageBusBenchmarks
+// For now, this is just a placeholder executable target
+// Uncomment the line below when ready to run benchmarks:
 // Benchmark.main([benchmarks])

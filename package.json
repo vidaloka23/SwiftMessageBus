@@ -1,0 +1,9 @@
+{
+  "name": "swift-message-bus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Version tracking for SwiftMessageBus Swift Package",
+  "scripts": {
+    "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s && git add CHANGELOG.md"
+  }
+}
