@@ -1,0 +1,40 @@
+name: Swift Lint
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - '**.swift'
+      - '.swiftlint.yml'
+      - '.swift-format'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - '**.swift'
+      - '.swiftlint.yml'
+      - '.swift-format'
+
+jobs:
+  swiftlint:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install SwiftLint
+      run: brew install swiftlint
+
+    - name: Run SwiftLint
+      run: swiftlint lint --config .swiftlint.yml --reporter github-actions-logging
+
+  swift-format:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install swift-format
+      run: brew install swift-format
+
+    - name: Run swift-format
+      run: swift-format lint -r Sources/ Tests/ Benchmarks/ --configuration .swift-format

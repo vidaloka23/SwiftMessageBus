@@ -74,7 +74,7 @@ extension Optional: MessagePayload where Wrapped: MessagePayload {}
 /// )
 /// ```
 public struct EmptyPayload: MessagePayload {
-    public init() {}
+  public init() {}
 }
 
 // MARK: - Common Payload Types
@@ -90,11 +90,11 @@ public struct EmptyPayload: MessagePayload {
 /// let count = ValuePayload(value: 42)
 /// ```
 public struct ValuePayload<T: MessagePayload>: MessagePayload {
-    public let value: T
-    
-    public init(value: T) {
-        self.value = value
-    }
+  public let value: T
+
+  public init(value: T) {
+    self.value = value
+  }
 }
 
 /// A generic error payload for error messages.
@@ -111,13 +111,13 @@ public struct ValuePayload<T: MessagePayload>: MessagePayload {
 /// )
 /// ```
 public struct ErrorPayload: MessagePayload {
-    public let code: String
-    public let message: String
-    public let details: [String: String]?
-    
-    public init(code: String, message: String, details: [String: String]? = nil) {
-        self.code = code
-        self.message = message
-        self.details = details
-    }
+  public let code: String
+  public let message: String
+  public let details: [String: String]?
+
+  public init(code: String, message: String, details: [String: String]? = nil) {
+    self.code = code
+    self.message = message
+    self.details = details
+  }
 }
